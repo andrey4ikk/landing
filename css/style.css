@@ -1,50 +1,46 @@
-body {
-    font-size: 18px;
-    font-family: "Open Sans", Arial, sans-serif;
+    body {
+        font-size: 18px;
+        font-family: "Open Sans", Arial, sans-serif;
+        width: 1600px;
+    }
 
-}
+     @media screen and (max-width: 768px) {
+        .banner_info h1,h2 {
+            font-size: 30px !important;
+        }
+    }
 
+    .social_link {
+        position: relative;
+        top: 30px;
+        right: 215px;
+        color: #FFFFFF;
+        float: right;
+        margin-right: 15px;
+    }
 
-.wrapper { 
-    max-width: 1600px;
-    margin: 0 auto;
-}
+    .social a:hover{
+        color: #03204f;
+        border-radius: 2px;
+    }
 
-.social_link {
-    position: relative;
-    top: 30px;
-    right: 215px;
-    color: #FFFFFF;
-    float: right;
-    margin-right: 15px;
-}
+    .banner {
+        padding: 174px 215px;
+        background: url("../img/banner.png") no-repeat center top;
+    }
 
-.social a:hover{
-    color: #03204f;
-    border-radius: 2px;
-}
+    .banner_info h1,h2 {
+        color: #fff;
+        font-weight: normal;
+        line-height: 66px;
+        font-size: 44px;
+    }
 
-.banner {
-    padding: 174px 215px;
-    background: url("../img/banner.png") no-repeat center top;
-}
-
-.banner_info h1,h2 {
-     width: 800px;
-     height: 55px;
-     font-family: Open Sans;
-     font-style: normal;
-     color: #fff;
-     font-weight: normal;
-     line-height: 66px;
-     font-size: 44px;
-     letter-spacing: 0.016em;
+    .banner_info h2 {
+        font-weight: lighter;
     }
 
     .btn {
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: normal;
         line-height: normal;
         font-size: 18px;
         text-align: center;
@@ -60,6 +56,7 @@ body {
         height: 68px;
         border: none;
     }
+
     .btn:hover {
         background-color: #b0caf2;
         color: #FFFFFF;
@@ -70,38 +67,37 @@ body {
     }
 
     .heading p {
-        line-height: 66px;
-        font-family: "Open Sans";
-        font-style: normal;
         font-weight: normal;
         line-height: 25px;
         font-size: 44px;
-        letter-spacing: 0.016em;
-        
         color: #333333;
     }
 
+    .heading p:last-child {
+        font-weight: lighter;
+    }
+
     .descr-wrap {
-        padding-left: 215px;
-        padding-right: 437px;
-        padding-bottom: 80px;
+        padding: 0 437px 80px 215px;
         display: flex;
         align-items: flex-start; 
     }
-    .descr-wrap h3{
+
+    .descr-wrap-food:first-child {
+        margin-right: 61px;
+    } 
+
+    .descr-wrap h3 {
         color: #333333;
         font-family: "Open Sans";
         font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 24px;
-        letter-spacing: 0.016em;    
+        font-size: 24px;  
     }
+
     .descr-wrap p {
         font-family: "Open Sans";
         font-style: normal;
-        font-weight: normal;
-        line-height: normal;
+        font-weight: lighter;
         font-size: 24px;
         letter-spacing: 0.016em;
     }
@@ -119,6 +115,7 @@ body {
         color: #fff;
         width: 620px;
     }
+
     .lorem_ipsum h4 {
         font-family: Open Sans;
         font-style: normal;
@@ -129,7 +126,50 @@ body {
     }
 
     .lorem_ipsum p {
-            color: #fff;
-            text-indent: 20px;
-            margin-bottom: 40px;
+        color: #fff;
+        text-indent: 20px;
+        margin-bottom: 40px;
     }
+
+    .social_navigation {
+        text-decoration: none;
+        width: 1170px;
+        height: 262px;
+        margin: 70px auto;
+        text-align: right; 
+    }
+
+    .social_name {
+       padding-top: 12px;
+       margin-right: 94px;
+       font-size: 18px;
+       height: 261px;  
+       display: inline-block;
+    }
+
+    .footer {
+        margin-top: 100px;
+    } 
+    .navigation_link {
+        float: right;
+        height: 261px;
+    }
+     h5,h6 {
+        color: #FFFFFF;
+        font-size: 18px;
+    }
+    h6 {
+        margin-bottom: 30px;
+    }
+    
+    .social_navigation a {
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 40px;   
+        text-decoration: none;
+    }
+
+    .copyright {
+        text-align: left;
+        color: rgba(255, 255, 255, 0.7);
+    }
+   
